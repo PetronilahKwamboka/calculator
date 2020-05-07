@@ -25,3 +25,13 @@ $(document).ready(function(){
     $("#output").text(result);
   });
 });
+
+$(document).ready(function(){
+  $("form#substract").submit(function(event){
+    event.preventDefault();
+    var number1 = parseInt($("#substract1").val());
+    var number2 = parseInt($("#substract2").val());
+    var result = (substract(number1, number2));
+    $("#output").text(result);
+  });
+});
